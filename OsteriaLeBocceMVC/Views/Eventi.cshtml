@@ -1,0 +1,51 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Eventi>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "MasterTemplate.cshtml";
+
+    IEnumerable<EventoSingolo> allEvents = Model.Content.Children().Cast<EventoSingolo>();
+}   
+
+@section HeaderSection {
+    @Html.Partial("BannerPV")
+}
+
+<div class="row">
+    <div class="col-tn-12">
+        <p>
+            @Model.Content.Descrizione
+        </p>
+    </div>
+</div>
+
+@if (allEvents.Count() == 0)
+{
+    <h4>Non ci sono eventi in programma per i prossimi giorni</h4>
+}
+else { 
+
+    foreach (var evento in allEvents) {
+    <article>
+        <div class="row">
+            <div class="col-tn-12">
+                <div class="panel olb-panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">@evento.Name</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-tn-12">
+                            <p>
+                                @evento.Descrizione
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel-footer olb-panel-footer">
+                        <button type="button" onclick="window.location.href='@evento.Url'" class="olb-button btn btn-default background-color-primary-0 color-primary-6 btn-block">MOSTRA EVENTO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    }
+}
+

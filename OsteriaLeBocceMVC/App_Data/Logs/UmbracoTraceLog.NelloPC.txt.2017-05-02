@@ -1,0 +1,91 @@
+﻿ 2017-05-02 02:13:20,994 [P17340/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on NELLOPC
+ 2017-05-02 02:13:21,325 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-05-02 02:13:21,519 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 194ms)
+ 2017-05-02 02:13:21,900 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-05-02 02:13:23,824 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 1924ms)
+ 2017-05-02 02:13:23,996 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-05-02 02:13:24,015 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 19ms)
+ 2017-05-02 02:13:24,016 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-05-02 02:13:24,034 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 17ms)
+ 2017-05-02 02:13:24,061 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-05-02 02:13:24,070 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 8ms)
+ 2017-05-02 02:13:24,071 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-05-02 02:13:24,081 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 10ms)
+ 2017-05-02 02:13:24,208 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-05-02 02:13:24,235 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 27ms)
+ 2017-05-02 02:13:24,236 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-05-02 02:13:24,260 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 23ms)
+ 2017-05-02 02:13:27,791 [P17340/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-02 02:13:29,091 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-05-02 02:13:29,135 [P17340/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 44ms)
+ 2017-05-02 02:13:29,739 [P17340/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-02 02:13:29,887 [P17340/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-02 02:13:30,379 [P17340/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-05-02 02:13:30,607 [P17340/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-05-02 02:13:30,608 [P17340/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-05-02 02:13:30,798 [P17340/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 10085ms)
+ 2017-05-02 02:13:31,876 [P17340/D2/T7] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:56955/umbraco (UmbracoModule request)
+ 2017-05-02 02:13:31,975 [P17340/D2/T6] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:56955/umbraco (UmbracoModule request)
+ 2017-05-02 02:13:33,217 [P17340/D2/T6] INFO  umbraco.content - Load Xml from file...
+ 2017-05-02 02:13:33,300 [P17340/D2/T6] INFO  umbraco.content - Loaded Xml from file.
+ 2017-05-02 02:13:39,067 [P17340/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-05-02 02:13:39,098 [P17340/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 31ms)
+ 2017-05-02 02:13:53,006 [P17340/D2/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-05-02 02:13:53,022 [P17340/D2/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 16ms)
+ 2017-05-02 02:13:53,862 [P17340/D2/T7] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username osteria.lebocce@gmail.com from IP address ::1
+ 2017-05-02 02:13:53,865 [P17340/D2/T7] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: osteria.lebocce@gmail.com logged in from IP address ::1
+ 2017-05-02 02:13:54,481 [P17340/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-05-02 02:13:54,493 [P17340/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 11ms)
+ 2017-05-02 02:13:55,200 [P17340/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2017-05-02 02:13:55,228 [P17340/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 27ms)
+ 2017-05-02 02:13:55,515 [P17340/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-05-02 02:13:55,516 [P17340/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-05-02 02:13:55,525 [P17340/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-05-02 02:13:55,548 [P17340/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 22ms)
+ 2017-05-02 02:13:56,229 [P17340/D2/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-05-02 02:13:56,246 [P17340/D2/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 17ms)
+ 2017-05-02 02:13:59,280 [P17340/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.HealthCheck.HealthCheck
+ 2017-05-02 02:13:59,306 [P17340/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.HealthCheck.HealthCheck, found 0 (took 25ms)
+ 2017-05-02 02:14:34,442 [P17340/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-05-01 02:14:34
+ 2017-05-02 02:14:48,492 [P17340/D2/T22] INFO  umbraco.CreatedPackageTasks - Xml save started
+ 2017-05-02 02:14:53,363 [P17340/D2/T16] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-05-02 02:23:37,471 [P17340/D2/T25] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at umbraco.cms.businesslogic.packager.utill.Stylesheet(String name, Boolean includeProperties, XmlDocument doc)
+   at umbraco.cms.businesslogic.packager.CreatedPackage.Publish()
+   at umbraco.presentation.developer.packages._Default.saveOrPublish(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.LinkButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.umbraco_developer_packages_editpackage_aspx.ProcessRequest(HttpContext context) in c:\Users\Aniello\AppData\Local\Temp\Temporary ASP.NET Files\vs\bd9b93ee\d7a18b50\App_Web_editpackage.aspx.5d1c7564.qys6meri.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2017-05-02 02:24:47,708 [P17340/D2/T16] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at umbraco.cms.businesslogic.packager.utill.Stylesheet(String name, Boolean includeProperties, XmlDocument doc)
+   at umbraco.cms.businesslogic.packager.CreatedPackage.Publish()
+   at umbraco.presentation.developer.packages._Default.saveOrPublish(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.LinkButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.umbraco_developer_packages_editpackage_aspx.ProcessRequest(HttpContext context) in c:\Users\Aniello\AppData\Local\Temp\Temporary ASP.NET Files\vs\bd9b93ee\d7a18b50\App_Web_editpackage.aspx.5d1c7564.qys6meri.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

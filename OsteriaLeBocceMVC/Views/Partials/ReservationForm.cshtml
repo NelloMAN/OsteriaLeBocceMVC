@@ -1,0 +1,200 @@
+﻿@model OsteriaLeBocceMVC.Models.ReservationFormModel
+@{
+
+    var personsListItem = new List<SelectListItem>();
+
+    for (int i = 0; i < 20; i++)
+    {
+
+        personsListItem.Add(new SelectListItem
+        {
+            Text = "" + (i + 1),
+            Value = "" + (i + 1)
+        }
+        );
+    }
+}
+
+@using (Html.BeginUmbracoForm<OsteriaLeBocceMVC.Controller.ReservationFormSurfaceController>("HandleFormSubmit"))
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Nome:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 editor-validation-pattern">
+                        @Html.TextBoxFor(reservationModel => reservationModel.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(reservationModel => reservationModel.Name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Cognome:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        @Html.TextBoxFor(reservationModel => reservationModel.Surname, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(reservationModel => reservationModel.Surname, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Data e ora:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        @Html.TextBoxFor(reservationModel => reservationModel.Day, new { @class = "form-control", type = "datetime-local" })
+                        @Html.ValidationMessageFor(reservationModel => reservationModel.Day, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Numero di persone:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        @Html.DropDownListFor(reservationModel => reservationModel.Persons, personsListItem, "Seleziona", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(reservationModel => reservationModel.Persons, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Telefono:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        @Html.TextBoxFor(reservationModel => reservationModel.Telephone, new { @class = "form-control", type = "tel" })
+                        @Html.ValidationMessageFor(reservationModel => reservationModel.Telephone, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Email:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        @Html.TextBoxFor(reservationModel => reservationModel.Email, new { @class = "form-control", type = "email" })
+                        @Html.ValidationMessageFor(reservationModel => reservationModel.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Note (scrivete qui se prenotate per un evento o un menù in particolare):</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        @Html.TextAreaFor(reservationModel => reservationModel.Message, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-sm-offset-10 col-sm-2">
+                <button type="submit" id="prenotaButton" class="olb-button btn btn-default background-color-primary-0 color-primary-6 btn-block">PRENOTA!</button>
+            </div>
+        </div>
+        
+    </fieldset>
+
+
+
+    <div class="modal fade" id="successModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Prenotazione avvenuta con successo!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Riceverete una conferma della vostra prenotazione tramite telefono o email. Grazie e a presto!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="olb-button btn btn-default background-color-primary-0 color-primary-6 btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="errorModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Prenotazione fallita!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Attenzione! La vostra prenotazione NON è stata inviata. Vi preghiamo di controllare la vostra conessione internet e riprovare più tardi. Grazie!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="olb-button btn btn-default background-color-primary-0 color-primary-6 btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    if (TempData["success"] != null && TempData["success"].ToString() == "True")
+    {
+        <script>
+            $(document).ready(function () {
+                $('#successModal').modal('show');
+            });
+        </script>
+    }
+    else if (TempData["success"] != null && TempData["success"].ToString() == "False")
+    {
+        <script>
+            $(document).ready(function () {
+                $('#errorModal').modal('show');
+            });
+        </script>
+    }
+}

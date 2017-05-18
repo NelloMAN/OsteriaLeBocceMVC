@@ -1,0 +1,1296 @@
+﻿ 2017-05-03 01:01:00,903 [P26264/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on NELLOPC
+ 2017-05-03 01:01:00,959 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-05-03 01:01:00,985 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 26ms)
+ 2017-05-03 01:01:01,084 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-05-03 01:01:01,847 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 762ms)
+ 2017-05-03 01:01:01,865 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-05-03 01:01:01,876 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 11ms)
+ 2017-05-03 01:01:01,877 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-05-03 01:01:01,889 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 12ms)
+ 2017-05-03 01:01:01,907 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-05-03 01:01:01,918 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 11ms)
+ 2017-05-03 01:01:01,919 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-05-03 01:01:01,939 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 19ms)
+ 2017-05-03 01:01:02,108 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-05-03 01:01:02,130 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 22ms)
+ 2017-05-03 01:01:02,130 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-05-03 01:01:02,145 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 14ms)
+ 2017-05-03 01:01:03,868 [P26264/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-03 01:01:04,368 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-05-03 01:01:04,383 [P26264/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 14ms)
+ 2017-05-03 01:01:04,661 [P26264/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-03 01:01:04,738 [P26264/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-03 01:01:04,912 [P26264/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-05-03 01:01:05,081 [P26264/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-05-03 01:01:05,081 [P26264/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-05-03 01:01:05,119 [P26264/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 4311ms)
+ 2017-05-03 01:01:05,664 [P26264/D2/T6] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:56955/umbraco (UmbracoModule request)
+ 2017-05-03 01:01:05,666 [P26264/D2/T8] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:56955/umbraco (UmbracoModule request)
+ 2017-05-03 01:01:05,668 [P26264/D2/T7] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:56955/umbraco (UmbracoModule request)
+ 2017-05-03 01:01:06,184 [P26264/D2/T6] INFO  umbraco.content - Load Xml from file...
+ 2017-05-03 01:01:06,211 [P26264/D2/T6] INFO  umbraco.content - Loaded Xml from file.
+ 2017-05-03 01:01:07,640 [P26264/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-05-03 01:01:07,664 [P26264/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 23ms)
+ 2017-05-03 01:01:35,256 [P26264/D2/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-05-03 01:01:35,269 [P26264/D2/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 13ms)
+ 2017-05-03 01:01:35,590 [P26264/D2/T7] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username osteria.lebocce@gmail.com from IP address ::1
+ 2017-05-03 01:01:35,591 [P26264/D2/T7] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: osteria.lebocce@gmail.com logged in from IP address ::1
+ 2017-05-03 01:01:35,918 [P26264/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-05-03 01:01:35,933 [P26264/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 14ms)
+ 2017-05-03 01:01:36,068 [P26264/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2017-05-03 01:01:36,097 [P26264/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 28ms)
+ 2017-05-03 01:01:36,138 [P26264/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-05-03 01:01:36,160 [P26264/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 21ms)
+ 2017-05-03 01:01:36,162 [P26264/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-05-03 01:01:36,162 [P26264/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-05-03 01:01:36,165 [P26264/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-05-03 01:01:36,190 [P26264/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 25ms)
+ 2017-05-03 01:01:38,462 [P26264/D2/T8] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.HealthCheck.HealthCheck
+ 2017-05-03 01:01:38,490 [P26264/D2/T8] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.HealthCheck.HealthCheck, found 0 (took 27ms)
+ 2017-05-03 01:02:06,342 [P26264/D2/T16] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-05-02 01:02:06
+ 2017-05-03 01:02:18,305 [P26264/D2/T13] INFO  UmbracoExamine.DataServices.UmbracoLogService - Index is being optimized, Provider=ExternalIndexer, NodeId=-1
+ 2017-05-03 01:03:13,274 [P26264/D2/T15] INFO  UmbracoExamine.DataServices.UmbracoLogService - Index is being optimized, Provider=InternalIndexer, NodeId=-1
+ 2017-05-03 01:04:26,817 [P26264/D2/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-05-03 01:04:26,817 [P26264/D2/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-05-03 01:04:26,818 [P26264/D2/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-05-03 01:04:26,818 [P26264/D2/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-05-03 01:04:26,818 [P26264/D2/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-05-03 01:04:26,818 [P26264/D2/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-05-03 01:04:26,820 [P26264/D2/T17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-05-03 01:04:26,820 [P26264/D2/T18] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-05-03 01:04:26,823 [P26264/D2/T6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-05-03 01:04:26,824 [P26264/D2/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-05-03 01:04:26,824 [P26264/D2/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-05-03 01:04:26,825 [P26264/D2/T16] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-05-03 01:04:26,852 [P26264/D2/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-05-03 01:04:26,852 [P26264/D2/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-05-03 01:04:26,852 [P26264/D2/T14] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-05-03 01:04:45,704 [P26264/D3/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on NELLOPC
+ 2017-05-03 01:04:45,726 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-05-03 01:04:45,743 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 17ms)
+ 2017-05-03 01:04:45,810 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-05-03 01:04:46,145 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 335ms)
+ 2017-05-03 01:04:46,160 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-05-03 01:04:46,174 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 14ms)
+ 2017-05-03 01:04:46,175 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-05-03 01:04:46,187 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 12ms)
+ 2017-05-03 01:04:46,204 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-05-03 01:04:46,216 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 12ms)
+ 2017-05-03 01:04:46,216 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-05-03 01:04:46,233 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 16ms)
+ 2017-05-03 01:04:46,262 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-05-03 01:04:46,273 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 11ms)
+ 2017-05-03 01:04:46,274 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-05-03 01:04:46,287 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 13ms)
+ 2017-05-03 01:04:47,261 [P26264/D3/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-03 01:04:47,456 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-05-03 01:04:47,471 [P26264/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 15ms)
+ 2017-05-03 01:04:47,520 [P26264/D3/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-03 01:04:47,523 [P26264/D3/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-03 01:04:47,546 [P26264/D3/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-05-03 01:04:47,618 [P26264/D3/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-05-03 01:04:47,618 [P26264/D3/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-05-03 01:04:47,634 [P26264/D3/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2007ms)
+ 2017-05-03 01:04:47,758 [P26264/D3/T38] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:56955/umbraco (UmbracoModule request)
+ 2017-05-03 01:04:49,503 [P26264/D3/T27] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.HealthCheck.HealthCheck
+ 2017-05-03 01:04:49,520 [P26264/D3/T27] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.HealthCheck.HealthCheck, found 0 (took 17ms)
+ 2017-05-03 01:04:56,918 [P26264/D2/T8] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Change in C:\Users\Aniello\AppData\Local\Temp\Temporary ASP.NET Files\vs\bd9b93ee\d7a18b50\hash\hash.web
+Change in C:\Users\Aniello\AppData\Local\Temp\Temporary ASP.NET Files\vs\bd9b93ee\d7a18b50\hash\hash.web
+HostingEnvironment ha causato un arresto.
+
+_shutDownStack=   in System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   in System.Environment.get_StackTrace()
+   in System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   in System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   in System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   in System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   in System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   in System.Web.DirectoryMonitor.FireNotifications()
+   in System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   in System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   in System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   in System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   in System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   in System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   in System.Threading.ThreadPoolWorkQueue.Dispatch()
+   in System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2017-05-03 01:05:48,303 [P26264/D3/T17] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-05-02 01:05:48
+ 2017-05-03 01:05:48,508 [P26264/D3/T28] INFO  umbraco.content - Load Xml from file...
+ 2017-05-03 01:05:48,510 [P26264/D3/T28] INFO  umbraco.content - Loaded Xml from file.
+ 2017-05-03 01:05:48,520 [P26264/D3/T28] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-05-03 01:05:48,538 [P26264/D3/T28] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 18ms)
+ 2017-05-03 01:07:05,553 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-05-03 01:07:05,553 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-05-03 01:07:05,555 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-05-03 01:07:05,555 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-05-03 01:07:05,558 [P26264/D3/T38] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-05-03 01:07:05,561 [P26264/D3/T16] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-05-03 01:07:05,597 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-05-03 01:07:05,597 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-05-03 01:07:05,597 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-05-03 01:07:05,597 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-05-03 01:07:05,598 [P26264/D3/T17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-05-03 01:07:05,598 [P26264/D3/T27] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-05-03 01:07:05,603 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-05-03 01:07:05,603 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-05-03 01:07:05,603 [P26264/D3/T32] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-05-03 01:07:35,676 [P26264/D3/T17] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+Notifica delle modifiche per le directory fondamentali.
+bin dir change or directory rename
+HostingEnvironment ha causato un arresto.
+
+_shutDownStack=   in System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   in System.Environment.get_StackTrace()
+   in System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   in System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   in System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   in System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   in System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   in System.Web.DirectoryMonitor.FireNotifications()
+   in System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   in System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   in System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   in System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   in System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   in System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   in System.Threading.ThreadPoolWorkQueue.Dispatch()
+   in System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()

@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<Specialita>
+@{
+    Layout = "MasterTemplate.cshtml";
+
+    string [] images = @Model.Content.Immagini.Split(',');
+    var imagesUrl = Umbraco.Media(images);
+}
+@section HeaderSection {
+    @Html.Partial("BannerPV")
+}
+<div class="row">
+    <div class="col-xs-12">
+        <p>@Model.Content.DescrizioneSpecialita</p>
+    </div>
+</div>
+<div class="row">
+    @{
+        foreach (var imgUrl in imagesUrl)
+        {
+            <div class="col-tn-3">
+                <a href="@imgUrl.Url" data-toggle="lightbox" data-gallery="gallery" data-type="image" data-title="@Model.Content.Name" data-footer="OSTERIA LE BOCCE: Da Gioia Al Gusto">
+                    <img src="@imgUrl.Url" class="img img-responsive center-block"/>
+                </a>
+            </div>
+        }
+    }
+</div>

@@ -1,0 +1,31 @@
+﻿ 2017-05-15 23:59:36,213 [P4756/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on NELLOPC
+ 2017-05-15 23:59:36,320 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-05-15 23:59:36,383 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 63ms)
+ 2017-05-15 23:59:36,502 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-05-15 23:59:37,703 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 1200ms)
+ 2017-05-15 23:59:37,723 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-05-15 23:59:37,737 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 14ms)
+ 2017-05-15 23:59:37,738 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-05-15 23:59:37,754 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 16ms)
+ 2017-05-15 23:59:37,769 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-05-15 23:59:37,780 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 11ms)
+ 2017-05-15 23:59:37,781 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-05-15 23:59:37,796 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 14ms)
+ 2017-05-15 23:59:37,876 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-05-15 23:59:37,883 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 6ms)
+ 2017-05-15 23:59:37,883 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-05-15 23:59:37,889 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 5ms)
+ 2017-05-15 23:59:40,341 [P4756/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-15 23:59:41,090 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-05-15 23:59:41,121 [P4756/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 31ms)
+ 2017-05-15 23:59:41,360 [P4756/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-15 23:59:41,441 [P4756/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-05-15 23:59:41,688 [P4756/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-05-15 23:59:41,914 [P4756/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-05-15 23:59:41,914 [P4756/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-05-15 23:59:41,959 [P4756/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 5893ms)
+ 2017-05-15 23:59:42,437 [P4756/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:56955/umbraco (UmbracoModule request)
+ 2017-05-15 23:59:42,939 [P4756/D2/T11] INFO  umbraco.content - Load Xml from file...
+ 2017-05-15 23:59:42,985 [P4756/D2/T11] INFO  umbraco.content - Loaded Xml from file.
+ 2017-05-15 23:59:44,556 [P4756/D2/T11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-05-15 23:59:44,584 [P4756/D2/T11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 28ms)

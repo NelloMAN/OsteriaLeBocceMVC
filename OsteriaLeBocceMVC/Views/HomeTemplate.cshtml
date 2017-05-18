@@ -1,0 +1,63 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.HomeDT>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "MasterTemplate.cshtml";
+}
+@section HeaderSection {
+    @Html.Partial("BannerPV")    
+}
+
+<br />
+<section>
+    <article>
+        <div class="row home-article">
+            <div class="col-sm-6 home-article-image">
+                <img src="~/images/home/chiSiamo.jpg" class="img-responsive img-circle article-image" width="500" height="290" />
+            </div>
+            <div class="col-sm-6 home-article-div">
+                <h2 class="page-title">Chi Siamo</h2>
+                <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tincidunt lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus malesuada aliquam ante quis varius. Nullam varius ante sit amet sem dapibus sodales. Integer vitae enim eget enim volutpat maximus vel a nisl. Pellentesque rutrum ipsum eget sem fringilla vestibulum. Curabitur accumsan tortor ut ante convallis sollicitudin a et leo. Mauris faucibus, urna et lobortis volutpat, magna metus euismod libero, a aliquet lectus urna ac felis.</i></p>
+            </div>
+        </div>
+    </article>
+    <div class="hr">
+        <hr />
+    </div>
+    <article>
+        <div class="row home-article">
+            <div class="col-sm-6 home-article-div">
+                <h2 class="page-title">I Nostri Menù</h2>
+                <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tincidunt lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus malesuada aliquam ante quis varius. Nullam varius ante sit amet sem dapibus sodales. Integer vitae enim eget enim volutpat maximus vel a nisl. Pellentesque rutrum ipsum eget sem fringilla vestibulum. Curabitur accumsan tortor ut ante convallis sollicitudin a et leo. Mauris faucibus, urna et lobortis volutpat, magna metus euismod libero, a aliquet lectus urna ac felis.</i></p>
+            </div>
+            <div class="col-sm-6 home-article-image">
+                <img src="~/images/home/menu.jpg" class="img-responsive img-circle article-image" width="500" height="290" />
+            </div>
+        </div>
+    </article>
+    <div class="hr">
+        <hr />
+    </div>
+    <article>
+        <div class="row home-article">
+            <div class="col-sm-6 home-article-image">
+                <img src="~/images/home/eventi.jpg" class="img-responsive img-circle article-image" width="500" height="290" />
+            </div>
+            <div class="col-sm-6 home-article-div">
+                <h2 class="page-title">Eventi</h2>
+                <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tincidunt lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus malesuada aliquam ante quis varius. Nullam varius ante sit amet sem dapibus sodales. Integer vitae enim eget enim volutpat maximus vel a nisl. Pellentesque rutrum ipsum eget sem fringilla vestibulum. Curabitur accumsan tortor ut ante convallis sollicitudin a et leo. Mauris faucibus, urna et lobortis volutpat, magna metus euismod libero, a aliquet lectus urna ac felis.</i></p>
+            </div>
+        </div>
+    </article>
+</section>
+<section>
+    <article>
+        <div class="row">
+            <div id="infoArticle" class="col-sm-offset-2 col-sm-8 background-color-primary-0">
+                <span class="color-primary-6" style="display:block;">
+                    Servizio d'asporto e consegna a domicilio. Tutti i giorni “menù lavoro” a partire da 7,00€ fino a un massimo di 12,00€. Si accettano Ticket Restaurant, Bancomat e carte di credito, eccetto American Express.
+                    <br>
+                </span><h2 class="color-primary-6">GIORNO DI CHIUSURA MARTEDI'</h2>
+            </div>
+        </div>
+    </article>
+</section>

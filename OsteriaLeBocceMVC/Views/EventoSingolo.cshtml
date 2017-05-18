@@ -1,0 +1,73 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.EventoSingolo>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "MasterTemplate.cshtml";
+}
+@section fbMeta {
+    @Html.Partial("FacebookMetaPV")
+}
+@section HeaderSection {
+    @Html.Partial("BannerPV")
+}
+<article>
+    <div class="row">
+        <div class="col-tn-12">
+            <br />
+            <p>
+                @Model.Content.Descrizione
+            </p>
+        </div>
+    </div>
+</article>
+
+<div class="row">
+    <br />
+    <div class="col-sm-4">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8" style="margin-bottom:10px;">
+                <button class="olb-button btn btn-default background-color-primary-0 color-primary-5" style="width:100%" onclick="window.location.href='@Umbraco.NiceUrl(int.Parse(Model.Content.Menu))'">LEGGI IL MENU'</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8" style="margin-bottom:10px;">
+                <button class="olb-button btn btn-default background-color-primary-0 color-primary-5" style="width:100%" onclick="window.location.href='/prenota-online'">PRENOTA ONLINE</button>
+                @*<button class="olb-button btn btn-default background-color-primary-0 color-primary-5" style="width:100%" onclick="window.location.href='/prenota-online?type=event&eventName=@Model.Content.Name'">PRENOTA ONLINE</button>*@
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8" style="margin-bottom:10px;">
+                <button class="olb-button btn btn-default background-color-primary-0 color-primary-5" style="width:100%" onclick="sharePage()">CONDIVIDI SU FACEBOOK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+
+<div class="row">
+    <div class="col-tn-12">
+        <div class="fb-share-button"
+                data-href="@Model.Content.UrlAbsolute()"
+                data-layout="button_count">
+        </div>
+    </div>
+</div>
+<br />
+
+<script>
+
+    function sharePage() {
+
+        FB.ui(
+         {
+             method: 'share',
+             display: 'popup',
+             href: '@Model.Content.UrlAbsolute()'
+         }, function (response) { });
+    }
+
+</script>

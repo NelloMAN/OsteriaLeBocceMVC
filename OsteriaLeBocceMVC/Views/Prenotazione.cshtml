@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<Prenotazione>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "MasterTemplate.cshtml";
+}
+@section HeaderSection {
+    @Html.Partial("BannerPV")
+}
+<div class="row">
+    <div class="col-xs-12">
+        <p>
+            Riempite tutti i campi per effettuare la prenotazione. Una volta eseguita, riceverete una e-mail o una telefonata di conferma. I vostri dati inseriti saranno utilizzati solo ed esclusivamente per informarvi dell'avvenuta conferma della prenotazione.
+        </p>
+    </div>
+</div>
+@*@Html.Action("Index", "ReservationFormSurface", new RouteValueDictionary( new { menu = menuListItem, eventi = eventListItem }))*@
+@Html.Action("Index", "ReservationFormSurface")

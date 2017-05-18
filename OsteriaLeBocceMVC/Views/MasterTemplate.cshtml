@@ -1,0 +1,201 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+
+    string url = Model.Content.UrlAbsolute();
+    string title = Model.Content.Name;
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+    <link href="~/css/Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/ekko-lightbox.css" rel="stylesheet" />
+    <script src="~/scripts/jquery.min.js"></script>
+    <script src="~/css/Bootstrap/js/bootstrap.js"></script>
+    <script src="~/scripts/jquery.validate.min.js"></script>
+    <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/scripts/ekko-lightbox.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="~/css/style.less" />
+    <script src="~/scripts/less.js"></script>
+    @*Facebook meta*@
+    @RenderSection("fbMeta", false)
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <title>Osteria Le Bocce | @Model.Content.Name</title>
+</head>
+<body class="background-color-primary-5 color-primary-2">
+
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1352089221552320',
+                xfbml: true,
+                version: 'v2.9'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/it_IT/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header>
+        
+        <div class="background-color-primary-0 social-bar-wrapper" style="width:100%;">
+            <div class="container background-color-primary-0">
+                <div class="row-">
+                    <div class="col-tn-12 col-sm-offset-10 col-sm-2">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="color-primary-6"> Seguici!</span>
+                                        <span><a href="https://www.facebook.com/osterialebocce/"><img class="icon" alt="facebook" title="facebook" src="~/images/icone/face.png" /></a></span>
+                                        <span><a href="https://www.instagram.com/osterialebocce/"><img class="icon" alt="instagram" title="instagram" src="~/images/icone/insta.png" /></a></span>
+                                        <span><a href="https://www.tripadvisor.it/Restaurant_Review-g670844-d7318695-Reviews-Osteria_Le_Bocce-Valmadrera_Lake_Como_Lombardy.html"><img class="icon" alt="tripadvisor" title="tripadvisor" src="~/images/icone/trip.png" /></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="topbar">
+            <div class="row" style="padding-top:10px;padding-bottom:10px;">
+                <div class="col-sm-4">
+                    <a href="/"><img alt="logo" src="~/images/logo_olb2.png" class="img img-responsive center-block" /></a>
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="h1Title">Dà Gioia Al Gusto</h1>
+                </div>
+            </div>
+        </div>
+
+        @Html.Partial("navigationPV")
+
+        @RenderSection("HeaderSection", false)
+        
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="page-wrapper col-sm-offset-1 col-sm-10 background-color-primary-5">
+
+                <div class="row title-border">
+                    <div class="col-tn-12">
+                        <h1 class="page-title">@CurrentPage.Name</h1>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-tn-12">
+                        @RenderBody()
+                        <br />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid background-color-primary-0">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="row">
+                    <div class="col-tn-offset-1 col-tn-10 col-xs-offset-0 col-xs-6">
+                        <div class="row">
+                            <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 socialFooterComponent color-primary-6"> 
+                                <h4><b><u><i>Riguardo Osteria Le Bocce</i></u></b></h4>
+                                <p>
+                                    È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-tn-offset-1 col-tn-10 col-xs-offset-0 col-xs-3">
+                        <div class="row">
+                            <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 socialFooterComponent color-primary-6">
+                                <h4><b><u><i>I Nostri Social</i></u></b></h4>
+                                <span><a href="https://www.facebook.com/osterialebocce/"><img src="~/images/icone/face.png" /></a> Seguici su Facebook!</span>
+                                <br />
+                                <br />
+                                <span><a href="https://www.instagram.com/osterialebocce/"><img src="~/images/icone/insta.png" /></a> Seguici su Instagram!</span>
+                                <br />
+                                <br />
+                                <span><a href="https://www.tripadvisor.it/Restaurant_Review-g670844-d7318695-Reviews-Osteria_Le_Bocce-Valmadrera_Lake_Como_Lombardy.html"><img src="~/images/icone/trip.png" /></a> Lascia una recensione su Tripadvisor!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-tn-offset-1 col-tn-10 col-xs-offset-0 col-xs-3">
+                        <div class="row">
+                            <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 socialFooterComponent color-primary-6">
+                                <h4 class="text-center"><b><u><i>Informazioni e contatti</i></u></b></h4>
+                                <address class="text-center">
+                                    <strong>Osteria Le Bocce</strong><br>
+                                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Via Trieste, 1 <br />
+                                    Valmadrera, (LC) 23868 <br />
+                                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> <abbr title="Phone">Tel:</abbr> 0341 581904
+                                </address>
+
+                                <address class="text-center">
+                                    <strong>Email</strong><br>
+                                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:#">osteria.lebocce@gmail.com</a>
+                                </address>
+                                <p class="text-center">
+                                    <a href="//www.iubenda.com/privacy-policy/8074642" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+                                </p>
+                                <script type="text/javascript">
+
+                                    (function (w, d) {
+                                        var loader = function () {
+                                            var s = d.createElement("script"),
+                                                tag = d.getElementsByTagName("script")[0];
+                                            s.src = "//cdn.iubenda.com/iubenda.js";
+                                            tag.parentNode.insertBefore(s, tag);
+                                        };
+                                        if (w.addEventListener) {
+                                            w.addEventListener("load", loader, false);
+                                        } else if (w.attachEvent) {
+                                            w.attachEvent("onload", loader);
+                                        } else {
+                                            w.onload = loader;
+                                        }
+                                    })(window, document);
+
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row background-color-primary-2 lastFooterRow">
+                    <span class="lastFooterSpan">
+                        <i>
+                            ©OSTERIA LE BOCCE - VIA TRIESTE, 1 - 23868 VALMADRERA (LC) - P.IVA IT00000000000 - TEL: 0341 581904.
+                            IL SITO WWW.OSTERIALEBOCCE.IT È STATO CREATO DA ANIELLO DI FALCO (aniello.difalco@adeo.it)
+                        </i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+    <script type="text/javascript" src="https://nibirumail.com/docs/scripts/nibirumail.cookie.min.js"></script>
+
+</body>
+</html>

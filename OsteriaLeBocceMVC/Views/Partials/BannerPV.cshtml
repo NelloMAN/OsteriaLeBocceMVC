@@ -1,0 +1,126 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{ 
+    var bannerBigScreen = Model.Content.GetPropertyValue<string>("banner").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
+    var bannerBigScreenCollection = Umbraco.TypedMedia(bannerBigScreen).Where(x => x != null);
+
+    var bannerSmallScreen = Model.Content.GetPropertyValue<string>("bannerXs").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
+    var bannerSmallScreenCollection = Umbraco.TypedMedia(bannerSmallScreen).Where(x => x != null);
+}
+
+@*for small screen*@
+@if (bannerSmallScreenCollection != null)
+{
+
+    if (bannerSmallScreenCollection.Count() > 1)
+    {
+        <div id="carousel-banner" class="carousel slide hidden-xs hidden-sm hidden-md hidden-lg" data-ride="carousel">
+            <!-- Indicators -->
+
+            <ol class="carousel-indicators">
+                @{
+                    int i = 0;
+                    foreach (var banner in bannerSmallScreenCollection)
+                    {
+
+                        <li data-target="#carousel-banner" data-slide-to="@i" class="active"></li>
+                        i++;
+                    }
+                }
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                @{
+                    int c = 0;
+                    foreach (var banner in bannerSmallScreenCollection)
+                    {
+
+                        <div class="item @(c == 0 ? "active" : "") carousel-img-content">
+                            <img class="carousel-img" src="@banner.Url" alt="Totò" />
+                        </div>
+
+                        c++;
+                    }
+                }
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-banner" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-banner" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    }
+    else
+    {
+        if (bannerSmallScreenCollection.Count() != 0)
+        {
+            <div class="container-fluid container-banner hidden-xs hidden-sm hidden-md hidden-lg">
+                <img class="img img-responsive" src="@bannerSmallScreenCollection.First().Url" />
+            </div>
+        }
+    }
+}
+
+
+@*for big screen*@
+@if (bannerBigScreenCollection != null) { 
+
+    if (bannerBigScreenCollection.Count() > 1)
+    {
+        <div id="carousel-banner" class="carousel slide hidden-tn" data-ride="carousel">
+            <!-- Indicators -->
+
+            <ol class="carousel-indicators">
+                @{ 
+                    int i = 0;
+                    foreach (var banner in bannerBigScreenCollection) {
+
+                        <li data-target="#carousel-banner" data-slide-to="@i" class="active"></li>
+                        i++;
+                    }
+                }
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                @{
+                    int c = 0;
+                    foreach (var banner in bannerBigScreenCollection) {
+
+                        <div class="item @(c == 0 ? "active" : "") carousel-img-content">
+                            <img class="carousel-img" src="@banner.Url" alt="Totò" />
+                        </div>
+
+                        c++;
+                    }
+                }
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-banner" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-banner" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    }
+    else
+    {
+        if (bannerBigScreenCollection.Count() != 0) { 
+            <div class="container-fluid container-banner hidden-tn">
+                <img class="img img-responsive" style="width:100%;"  src="@bannerBigScreenCollection.First().Url" />
+            </div>
+        }
+    }
+}
+

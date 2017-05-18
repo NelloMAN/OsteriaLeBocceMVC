@@ -1,0 +1,251 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.MenuSingolo>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "MasterTemplate.cshtml";
+}
+@section fbMeta {
+    @Html.Partial("FacebookMetaPV")
+}
+@section HeaderSection {
+    @Html.Partial("BannerPV")
+}
+<article>
+    <div class="row">
+        <div class="col-tn-12 menu-description">
+            @Model.Content.Descrizione
+        </div>
+    </div>
+    <div class="row">
+        <div id="menu-list-wrapper" class="col-sm-6">
+            <div class="row">
+                <div id="menu-list" class="col-xs-offset-2 col-xs-8 background-color-primary-3">
+                    <h2 class="background-color-primary-0">@Model.Content.Name</h2>
+
+                    @if (Model.Content.MenuDelGiorno)
+                    {
+
+                        if (!Model.Content.PiattoDelGiorno.Equals(""))
+                        {
+
+                            <h2>Piatto Unico</h2>
+                            <ul>
+                                <li><i>• @Model.Content.PiattoDelGiorno •</i></li>
+                            </ul>
+                        }
+                    }
+
+                    @if (Model.Content.Antipasti.Count() > 0) { 
+
+                        <h2>@(Model.Content.Antipasti.Count() > 1 ? "Antipasti" : "Antipasto")</h2>
+                        <ul>
+                            @foreach (var antipasto in Model.Content.Antipasti)
+                            {
+                                if (!antipasto.Equals(""))
+                                {
+                                    <li><i>• @antipasto •</i></li>
+                                }
+                            }
+                        </ul>
+                    }
+
+                    @if (Model.Content.Primi.Count() > 0) { 
+                        <h2>@(Model.Content.Primi.Count() > 1 ? "Primi" : "Primo")</h2>
+                        <ul>
+                            @foreach (var primo in Model.Content.Primi)
+                            {
+                                if (!primo.Equals(""))
+                                {
+                                    <li><i>• @primo •</i></li>
+                                }
+                            }
+                        </ul>
+                    }
+
+                    @if (Model.Content.Secondi.Count() > 0) {
+
+                        <h2>@(Model.Content.Secondi.Count() > 1 ? "Secondi" : "Secondo")</h2>
+                        <ul>
+                            @foreach (var secondo in Model.Content.Secondi)
+                            {
+                                if (!secondo.Equals(""))
+                                {
+                                    <li><i>• @secondo •</i></li>
+                                }
+                            }
+                        </ul>
+                    }
+
+                    @if (Model.Content.Contorni.Count() > 0)
+                    {
+
+                        <h2>@(Model.Content.Contorni.Count() > 1 ? "Contorni" : "Contorno")</h2>
+                        <ul>
+                            @foreach (var contorno in Model.Content.Contorni)
+                            {
+                                if (!contorno.Equals(""))
+                                {
+                                    <li><i>• @contorno •</i></li>
+                                }
+                            }
+                        </ul>
+                    }
+
+                    @if (Model.Content.Dessert.Count() > 0) {
+
+                        <h2>Dessert</h2>
+                        <ul>
+                            @foreach (var dessert in Model.Content.Dessert)
+                            {
+                                if (!dessert.Equals(""))
+                                {
+                                    <li><i>• @dessert •</i></li>
+                                }
+                            }
+                        </ul>
+                    }
+
+                    @if (Model.Content.Vino.Count() > 0) {
+
+                        <h2>@(Model.Content.Vino.Count() > 1 ? "Vini" : "Vino")</h2>
+                        <ul>
+                            @foreach (var vino in Model.Content.Vino)
+                            {
+                                if (!vino.Equals(""))
+                                {
+                                    <li><i>• @vino •</i></li>
+                                }
+                            }
+                        </ul>
+                    }
+                    <p style="color:white;padding-bottom:0.7em;">@(Model.Content.Caffe ? "Caffè" : "") @(Model.Content.Digestivo ? "e Digestivo" : "")</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+
+            @if (!Model.Content.MenuDelGiorno) {
+
+                
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8 ">
+                        <div class="panel olb-panel">
+                            <div class="panel-heading">
+                                <h3><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Informazioni</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <p>Valido da: @Model.Content.ValidoDa.ToString("dd-MM-yyyy")</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <p>Fino a: @Model.Content.FinoA.ToString("dd-MM-yyyy")</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <p>Prezzo: @Model.Content.Prezzo.ToString("F") €</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <span>Contattaci qui:</span>
+                                        <br />
+                                        <span>E-mail: <a href="mailto:osteria.lebocce@gmail.com">osteria.lebocce@gmail.com</a></span>
+                                        <br />
+                                        <span>Telefono: 0341581904</span>
+                                        <br />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <p>Oppure</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer olb-panel-footer">
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <button type="button" class="olb-button btn btn-default background-color-primary-0 color-primary-5 btn-block" onclick="window.location.href='/prenota-online'">PRENOTA IL TUO TAVOLO ONLINE!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            }
+            else
+            {
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8 ">
+                        <div class="panel olb-panel">
+                            <div class="panel-heading">
+                                <h3><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Informazioni</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <p>Valido il @DateTime.Now.ToString("dd-MM-yyyy") a pranzo</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <p>Solo primo con ½ acqua, caffè €7,00</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <p>Secondo e contorno, ½ acqua, ¼ vino, caffè: € 9,00</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <p>Menù completo 12,00€</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <span>Contattaci qui:</span>
+                                        <br />
+                                        <span>E-mail: <a href="mailto:osteria.lebocce@gmail.com">osteria.lebocce@gmail.com</a></span>
+                                        <br />
+                                        <span>Telefono: 0341581904</span>
+                                        <br />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        <p>Oppure</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer olb-panel-footer">
+                                <div class="row">
+                                    <div class="col-tn-12">
+                                        @*<button type="button" class="olb-button btn btn-default background-color-primary-0 color-primary-5 btn-block" onclick="window.location.href='/prenota-online?type=menu&menuName=@Model.Content.Name'">PRENOTA IL TUO TAVOLO ONLINE!</button>*@
+                                        <button type="button" class="olb-button btn btn-default background-color-primary-0 color-primary-5 btn-block" onclick="window.location.href='/prenota-online'">PRENOTA IL TUO TAVOLO ONLINE!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-tn-12">
+            <div class="fb-share-button"
+                    data-href="@Model.Content.UrlAbsolute()"
+                    data-layout="button_count">
+            </div>
+        </div>
+    </div>
+    
+    <br />
+</article>

@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ChiSiamo>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "MasterTemplate.cshtml";
+    
+}
+@section fbMeta {
+    @Html.Partial("FacebookMetaPV")
+}
+@section HeaderSection {
+    @Html.Partial("BannerPV")    
+}
+<div class="row">
+    <div class="col-tn-12">
+        <p>
+            @Model.Content.Descrizione
+        </p>
+    </div>
+</div>

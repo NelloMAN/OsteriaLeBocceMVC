@@ -1,0 +1,35 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<LeNostreSpecialita>
+@{
+	Layout = "MasterTemplate.cshtml";
+}
+
+@section HeaderSection {
+    @Html.Partial("BannerPV")
+}
+<div class="row">
+    <div class="col-xs-12">
+        <p>
+            @Model.Content.Descrizione
+        </p>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-sm-3" >
+        <h2 class="text-center"><u>Le Pizze</u></h2>
+        <a href="le-pizze"><img src="~/images/specialita/sp_pizza.jpg" class="img img-responsive center-block special-img" /></a>
+    </div>
+    <div class="col-sm-3">
+        <h2 class="text-center"><u>I Panini</u></h2>
+        <a href="i-panini"><img src="~/images/specialita/sp_panini.jpg" class="img img-responsive center-block special-img" /></a>
+    </div>
+    <div class="col-sm-3">
+        <h2 class="text-center"><u>La Cucina</u></h2>
+        <a href="la-cucina"><img src="~/images/specialita/sp_piatti.jpg" class="img img-responsive center-block special-img" /></a>
+    </div>
+    <div class="col-sm-3">
+        <h2 class="text-center"><u>I Dessert</u></h2>
+        <a href="i-desserts"><img src="~/images/specialita/sp_dolci.jpg" class="img img-responsive center-block special-img" /></a>
+    </div>
+</div>
+<br />

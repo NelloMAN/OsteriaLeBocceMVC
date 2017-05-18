@@ -1,0 +1,45 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Menu>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "MasterTemplate.cshtml";
+
+    IEnumerable<MenuSingolo> menuList = Model.Content.Children().Cast<MenuSingolo>();
+}
+@section HeaderSection {
+    @Html.Partial("BannerPV")
+}
+<div class="row">
+    <div class="col-tn-12">
+        <p>@Model.Content.Descrizione</p>
+    </div>
+</div>
+@foreach (var menu in menuList)
+{
+    <article>
+        <div class="row menu-preview">
+            <div class="col-tn-12">
+                <div class="page-subtitle">
+                    <h2>@menu.Name</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row menu-preview-content">
+            <div class="col-sm-2 hidden-tn">
+                <a href="@menu.Url"><img class="img-responsive center-block" src="~/images/icone/menu.png" width="100" /></a>
+            </div>
+            <div class="col-tn-12 col-sm-10">
+                <div class="row">
+                    <div class="col-tn-12">
+                        <p>@menu.Descrizione</p>
+                    </div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-tn-12">
+                        <button type="button" onclick="window.location.href='@menu.Url'" class="olb-button btn btn-default background-color-primary-0 color-primary-5">LEGGI IL MENU</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+}

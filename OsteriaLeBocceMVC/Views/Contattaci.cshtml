@@ -1,0 +1,49 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<Contattaci>
+@{
+	Layout = "MasterTemplate.cshtml";
+}
+@section HeaderSection {
+    @Html.Partial("BannerPV")
+}
+<div class="row">
+    <div class="col-sm-5">
+
+        <div class="panel olb-panel">
+            <div class="panel-heading text-center">
+                <h3><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Recapiti</h3>
+            </div>
+            <div class="panel-body text-center">
+                <div class="row">
+                    <div class="col-tn-12">
+                        <address>
+                            <strong>Osteria Le Bocce</strong><br>
+                            Via Trieste, 1<br>
+                            Valmadrera, (LC) 23868<br>
+                            <abbr title="Telefono">Tel:</abbr> 0341 581904
+                        </address>
+
+                        <address>
+                            <strong>Email: </strong><br>
+                            <a href="mailto:osteria.lebocce@gmail.com">osteria.lebocce@gmail.com</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-sm-7 ">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.234796932709!2d9.357261315305955!3d45.84659997910725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47841d0b0e91bd57%3A0x57b4e30702e8b036!2sOsteria+Le+Bocce!5e0!3m2!1sit!2sit!4v1480541930346" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-tn-12">
+        <h2 class="page-title">Come Raggiungerci</h2>
+    </div>
+    <div class="col-tn-12">
+        @Model.Content.Descrizione
+    </div>
+</div>
