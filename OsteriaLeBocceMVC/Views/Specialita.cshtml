@@ -1,9 +1,16 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<Specialita>
+@using umbraco.cms.businesslogic.media
 @{
     Layout = "MasterTemplate.cshtml";
 
-    string [] images = @Model.Content.Immagini.Split(',');
-    var imagesUrl = Umbraco.Media(images);
+
+    string folder = @Model.Content.Immagini.Split(',')[0];
+    //var folderUrl = Umbraco.Media(folder);
+    //var imagesUrl = folderUrl.Children("File");
+    umbraco.cms.businesslogic.media.Media imagesUrl = new umbraco.cms.businesslogic.media.Media(int.Parse(folder));
+
+    int c = 6;
+
 }
 @section HeaderSection {
     @Html.Partial("BannerPV")
@@ -15,13 +22,25 @@
 </div>
 <div class="row">
     @{
-        foreach (var imgUrl in imagesUrl)
+        int i = 0;
+        foreach (var imgUrl in imagesUrl.Children)
         {
+
+            if (i != 0 && i % 4 == 0)
+            {
+                int s = 0;
+                @:</div>
+                @:<div class="row">
+            }
+
             <div class="col-tn-3">
-                <a href="@imgUrl.Url" data-toggle="lightbox" data-gallery="gallery" data-type="image" data-title="@Model.Content.Name" data-footer="OSTERIA LE BOCCE: Da Gioia Al Gusto">
-                    <img src="@imgUrl.Url" class="img img-responsive center-block"/>
+                <a href="@Umbraco.Media(imgUrl.Id).Url" data-toggle="lightbox" data-gallery="gallery" data-type="image" data-title="@Model.Content.Name" data-footer="@imgUrl.Text">
+                    <img src="@Umbraco.Media(imgUrl.Id).Url" class="img img-responsive center-block" />
                 </a>
             </div>
+
+            
+            i++;
         }
     }
 </div>
