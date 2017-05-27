@@ -3,14 +3,8 @@
 @{
     Layout = "MasterTemplate.cshtml";
 
-
     string folder = @Model.Content.Immagini.Split(',')[0];
-    //var folderUrl = Umbraco.Media(folder);
-    //var imagesUrl = folderUrl.Children("File");
     umbraco.cms.businesslogic.media.Media imagesUrl = new umbraco.cms.businesslogic.media.Media(int.Parse(folder));
-
-    int c = 6;
-
 }
 @section HeaderSection {
     @Html.Partial("BannerPV")

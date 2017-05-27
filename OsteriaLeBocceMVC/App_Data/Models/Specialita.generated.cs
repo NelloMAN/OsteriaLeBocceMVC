@@ -80,5 +80,14 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			get { return this.GetPropertyValue<string>("immagini"); }
 		}
+
+		///<summary>
+		/// menu
+		///</summary>
+		[ImplementPropertyType("menu")]
+		public string Menu
+		{
+			get { return this.GetPropertyValue<string>("menu"); }
+		}
 	}
 }
