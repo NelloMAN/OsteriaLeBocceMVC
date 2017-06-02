@@ -1,0 +1,53 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.SingleEvent>
+@using ContentModels = Umbraco.Web.PublishedContentModels
+@{
+	Layout = "MasterTemplate.cshtml";
+}
+@section fbMeta {
+    @Html.Partial("FacebookMetaPV")
+}
+@section HeaderSection {
+    @Html.Partial("BannerPV")
+}
+<article>
+    <div class="row">
+        <div class="col-tn-12">
+            <br />
+            <p>
+                Test Test
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <br />
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8" style="margin-bottom:10px;">
+                    <button class="olb-button btn btn-default background-color-primary-0 color-primary-5" style="width:100%;">LEGGI IL MENU'</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8" style="margin-bottom:10px;">
+                    <button class="olb-button btn btn-default background-color-primary-0 color-primary-5" style="width:100%" onclick="window.location.href='/prenota-online'">PRENOTA ONLINE</button>
+                    @*<button class="olb-button btn btn-default background-color-primary-0 color-primary-5" style="width:100%" onclick="window.location.href='/prenota-online?type=event&eventName=@Model.Content.Name'">PRENOTA ONLINE</button>*@
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-tn-12">
+            <div class="fb-share-button"
+                    data-href="@Model.Content.UrlAbsolute()"
+                    data-layout="button_count">
+            </div>
+        </div>
+    </div>
+    <br />
+</article>

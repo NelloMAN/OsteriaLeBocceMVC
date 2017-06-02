@@ -714,6 +714,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="images\banner.psd" />
+    <Content Include="images\theForkReservation.png" />
     <Content Include="Media\1001\banner_home_big-thumb.jpg" />
     <Content Include="Media\1001\banner_home_thumb.jpg" />
     <Content Include="Media\1003\chi-siamo-1.jpg" />
@@ -3856,6 +3857,9 @@
     <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
     <Content Include="fonts\IMPREGNABLE_PERSONAL_USE_ONLY.TTF" />
+    <Content Include="Media\1049\menu_osteria_le_bocce_.pdf" />
+    <Content Include="Media\1051\panini_lebocce.pdf" />
+    <Content Include="Media\1052\pizze_lebocce.pdf" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
@@ -6547,6 +6551,7 @@
     <Content Include="Views\Partials\BannerPV.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Partials\FacebookMetaPV.cshtml" />
+    <Content Include="Views\SingleEvent.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -6590,6 +6595,7 @@
     <Folder Include="App_Data\TEMP\FileUploads\" />
     <Folder Include="App_Data\TEMP\Install\" />
     <Folder Include="Media\1002\" />
+    <Folder Include="Media\1050\" />
     <Folder Include="Media\9bb6c8c2-3a20-4a6f-aa58-86a630f0c0ec\" />
     <Folder Include="Views\MacroPartials\" />
     <Folder Include="Views\ReservationFormSurface\" />

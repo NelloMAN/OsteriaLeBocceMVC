@@ -3,7 +3,7 @@
 @{
 	Layout = "MasterTemplate.cshtml";
 
-    IEnumerable<EventoSingolo> allEvents = Model.Content.Children().Cast<EventoSingolo>();
+    IEnumerable<SingleEvent> allEvents = Model.Content.Children().Cast<SingleEvent>();
 }   
 
 @section HeaderSection {
@@ -13,7 +13,7 @@
 <div class="row">
     <div class="col-tn-12">
         <p>
-            @Model.Content.Descrizione
+            @Html.Raw(Model.Content.Descrizione)
         </p>
     </div>
 </div>

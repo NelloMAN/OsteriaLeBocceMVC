@@ -1,7 +1,12 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.HomeDT>
+@using umbraco.NodeFactory;
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = "MasterTemplate.cshtml";
+    Layout = "MasterTemplate.cshtml";
+
+    Node chiSiamoNode = uQuery.GetNodesByName("Chi Siamo").Where(n => n.NodeTypeAlias == "chiSiamo").FirstOrDefault();
+    Node menuNode = uQuery.GetNodesByName("Menu").Where(n => n.NodeTypeAlias == "menu").FirstOrDefault();
+    Node eventiNode = uQuery.GetNodesByName("Eventi").Where(n => n.NodeTypeAlias == "eventi").FirstOrDefault();
 }
 @section HeaderSection {
     @Html.Partial("BannerPV")    
@@ -15,8 +20,8 @@
                 <img src="~/images/home/chiSiamo.jpg" class="img-responsive img-circle article-image" width="500" height="290" />
             </div>
             <div class="col-sm-6 home-article-div">
-                <h2 class="page-title">Chi Siamo</h2>
-                <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tincidunt lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus malesuada aliquam ante quis varius. Nullam varius ante sit amet sem dapibus sodales. Integer vitae enim eget enim volutpat maximus vel a nisl. Pellentesque rutrum ipsum eget sem fringilla vestibulum. Curabitur accumsan tortor ut ante convallis sollicitudin a et leo. Mauris faucibus, urna et lobortis volutpat, magna metus euismod libero, a aliquet lectus urna ac felis.</i></p>
+                <a style="color:black;" href="@chiSiamoNode.Url"><h2 class="page-title text-center"><i>Chi Siamo</i></h2></a>
+                <p><i>@Html.Raw(chiSiamoNode.GetProperty("descrizione").Value.Truncate(700, "..."))</i></p>
             </div>
         </div>
     </article>
@@ -26,8 +31,9 @@
     <article>
         <div class="row home-article">
             <div class="col-sm-6 home-article-div">
-                <h2 class="page-title">I Nostri Menù</h2>
-                <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tincidunt lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus malesuada aliquam ante quis varius. Nullam varius ante sit amet sem dapibus sodales. Integer vitae enim eget enim volutpat maximus vel a nisl. Pellentesque rutrum ipsum eget sem fringilla vestibulum. Curabitur accumsan tortor ut ante convallis sollicitudin a et leo. Mauris faucibus, urna et lobortis volutpat, magna metus euismod libero, a aliquet lectus urna ac felis.</i></p>
+                <a style="color:black;" href="@menuNode.Url"><h2 class="page-title text-center"><i>I Nostri Menù</i></h2></a>
+                <i>@Html.Raw(menuNode.GetProperty("descrizione").Value.Truncate(700, "..."))</i>
+                <p style="text-align: center;"><em><strong><a style="color: black;" data-id="1073" href="/{localLink:1073}" target="_blank" title="Menù del Giorno"><i>CLICCA QUI PER VEDERE IL MENU' DEL GIORNO!</i></a></strong></em></p>
             </div>
             <div class="col-sm-6 home-article-image">
                 <img src="~/images/home/menu.jpg" class="img-responsive img-circle article-image" width="500" height="290" />
@@ -43,8 +49,8 @@
                 <img src="~/images/home/eventi.jpg" class="img-responsive img-circle article-image" width="500" height="290" />
             </div>
             <div class="col-sm-6 home-article-div">
-                <h2 class="page-title">Eventi</h2>
-                <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tincidunt lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus malesuada aliquam ante quis varius. Nullam varius ante sit amet sem dapibus sodales. Integer vitae enim eget enim volutpat maximus vel a nisl. Pellentesque rutrum ipsum eget sem fringilla vestibulum. Curabitur accumsan tortor ut ante convallis sollicitudin a et leo. Mauris faucibus, urna et lobortis volutpat, magna metus euismod libero, a aliquet lectus urna ac felis.</i></p>
+                <a style="color:black;" href="@eventiNode.Url"><h2 class="page-title text-center"><i>Gli Eventi</i></h2></a>
+                <p><i>@Html.Raw(eventiNode.GetProperty("descrizione").Value.Truncate(700, "..."))</i></p>
             </div>
         </div>
     </article>

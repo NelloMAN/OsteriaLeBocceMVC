@@ -67,9 +67,9 @@ namespace Umbraco.Web.PublishedContentModels
 		/// descrizione
 		///</summary>
 		[ImplementPropertyType("descrizione")]
-		public string Descrizione
+		public IHtmlString Descrizione
 		{
-			get { return this.GetPropertyValue<string>("descrizione"); }
+			get { return this.GetPropertyValue<IHtmlString>("descrizione"); }
 		}
 	}
 }

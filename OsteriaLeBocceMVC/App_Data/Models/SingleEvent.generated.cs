@@ -20,16 +20,16 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Umbraco.Web.PublishedContentModels
 {
-	/// <summary>Evento Singolo</summary>
-	[PublishedContentModel("eventoSingolo")]
-	public partial class EventoSingolo : PublishedContentModel
+	/// <summary>SingleEvent</summary>
+	[PublishedContentModel("singleEvent")]
+	public partial class SingleEvent : PublishedContentModel
 	{
 #pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "eventoSingolo";
+		public new const string ModelTypeAlias = "singleEvent";
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 #pragma warning restore 0109
 
-		public EventoSingolo(IPublishedContent content)
+		public SingleEvent(IPublishedContent content)
 			: base(content)
 		{ }
 
@@ -40,7 +40,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 #pragma warning restore 0109
 
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<EventoSingolo, TValue>> selector)
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SingleEvent, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
@@ -76,9 +76,9 @@ namespace Umbraco.Web.PublishedContentModels
 		/// menu
 		///</summary>
 		[ImplementPropertyType("menu")]
-		public object Menu
+		public string Menu
 		{
-			get { return this.GetPropertyValue("menu"); }
+			get { return this.GetPropertyValue<string>("menu"); }
 		}
 	}
 }
