@@ -148,11 +148,11 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        Riceverete una conferma della vostra prenotazione tramite telefono o email. Grazie e a presto!
+                        La Vostra prenotazione è stata inviata! Riceverete una conferma tramite telefono o email. Grazie e a presto!
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="olb-button btn btn-default background-color-primary-0 color-primary-6 btn-block" data-dismiss="modal">Close</button>
+                    <button id="buttonModalReservationSuccess" type="submit" class="olb-button btn btn-default background-color-primary-0 color-primary-6 btn-block" data-dismiss="modal">Chiudi</button>
                 </div>
             </div>
 
@@ -174,7 +174,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="olb-button btn btn-default background-color-primary-0 color-primary-6 btn-block" data-dismiss="modal">Close</button>
+                    <button id="buttonModalReservationFail" type="submit" class="olb-button btn btn-default background-color-primary-0 color-primary-6 btn-block" data-dismiss="modal">Chiudi</button>
                 </div>
             </div>
 
@@ -187,6 +187,10 @@
             $(document).ready(function () {
                 $('#successModal').modal('show');
             });
+
+            $("#buttonModalReservationSuccess").click(function () {
+                window.location.href = '/';
+            })
         </script>
     }
     else if (TempData["success"] != null && TempData["success"].ToString() == "False")

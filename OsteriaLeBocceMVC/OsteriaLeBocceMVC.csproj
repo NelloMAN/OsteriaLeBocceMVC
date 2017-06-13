@@ -3860,6 +3860,7 @@
     <Content Include="Media\1049\menu_osteria_le_bocce_.pdf" />
     <Content Include="Media\1051\panini_lebocce.pdf" />
     <Content Include="Media\1052\pizze_lebocce.pdf" />
+    <None Include="Properties\PublishProfiles\Osteria Le Bocce.pubxml" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
