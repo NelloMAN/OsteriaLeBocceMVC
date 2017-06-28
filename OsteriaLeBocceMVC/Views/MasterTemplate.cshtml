@@ -4,6 +4,9 @@
 
     string url = Model.Content.UrlAbsolute();
     string title = Model.Content.Name;
+
+    IPublishedContent prenotaOnline = CurrentPage.Site().Children("prenotazione").Where("Visible").First();
+    string prenotaOnlineURL = prenotaOnline.Url; 
 }
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
@@ -90,8 +93,8 @@
                     <h1 class="h1Title">Dà Gioia Al Gusto</h1>
                 </div>
                 <div class="col-sm-4">
-                    <a href="prenota-online" style="color:black;">
-                        <h4 class="text-center" style="padding-top:25px;"><i>PRENOTA SUBITO IL TUO TAVOLO!</i></h4>
+                    <a href="@prenotaOnlineURL" target="_self" style="color:#FFF1BA;">
+                        <h4 class="text-center banner-reservation"><i>PRENOTA SUBITO IL TUO TAVOLO!</i></h4>
                     </a>
                 </div>
             </div>

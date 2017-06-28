@@ -1,18 +1,7 @@
 ﻿{
-  "propertyEditors": [
-    {
-      "name": "Models Builder",
-      "alias": "Umbraco.Dashboard.ModelsBuilderController",
-      "editor": 
-        {
-          "valueType": "JSON",
-          "view": "~/App_Plugins/ModelsBuilder/modelsbuilder.htm"
-        }
-    }
-  ],
-  //array of files we want to inject into the application on app_start
-  "javascript": [
-  "~/App_Plugins/ModelsBuilder/modelsbuilder.controller.js",
-  "~/App_Plugins/ModelsBuilder/modelsbuilder.resource.js"
-  ]
+    //array of files we want to inject into the application on app_start
+    javascript: [
+        '~/App_Plugins/ModelsBuilder/modelsbuilder.controller.js',
+		'~/App_Plugins/ModelsBuilder/modelsbuilder.resource.js'
+    ]
 }

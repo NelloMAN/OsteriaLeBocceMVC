@@ -162,10 +162,6 @@
       <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.CodeAnalysis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.0.0\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
       <Private>True</Private>
@@ -215,16 +211,6 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Microsoft.WindowsAzure.Storage, Version=7.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\WindowsAzure.Storage.7.2.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="MiniProfiler, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b44f9351044011a3, processorArchitecture=MSIL">
       <HintPath>..\packages\MiniProfiler.2.1.0\lib\net40\MiniProfiler.dll</HintPath>
       <Private>True</Private>
@@ -236,6 +222,9 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="OsteriaLeBocceMVC">
+      <HintPath>..\backupBIN\OsteriaLeBocceMVC.dll</HintPath>
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
@@ -346,14 +335,22 @@
       <HintPath>..\packages\UmbracoCms.Core.7.5.4\lib\umbraco.MacroEngines.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Umbraco.ModelsBuilder, Version=3.0.5.96, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Umbraco.ModelsBuilder, Version=3.0.7.99, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Umbraco.ModelsBuilder.3.0.5\lib\Umbraco.ModelsBuilder.dll</HintPath>
+      <HintPath>..\packages\Umbraco.ModelsBuilder.3.0.7\lib\Umbraco.ModelsBuilder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Umbraco.ModelsBuilder.Api, Version=3.0.6.97, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Umbraco.ModelsBuilder.Api.3.0.6\lib\Umbraco.ModelsBuilder.Api.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="umbraco.providers, Version=1.0.6136.27246, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UmbracoCms.Core.7.5.4\lib\umbraco.providers.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Umbraco.Web.PublishedContentModels.dll</HintPath>
     </Reference>
     <Reference Include="Umbraco.Web.UI, Version=1.0.6136.27253, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UmbracoCms.Core.7.5.4\lib\Umbraco.Web.UI.dll</HintPath>
@@ -471,14 +468,104 @@
     <Content Include="bin\amd64\sqlceqp40.dll" />
     <Content Include="bin\amd64\sqlcese40.dll" />
     <Content Include="bin\App_Data\NuGetBackup\20161102-211314\bin\AutoMapper.Net4.dll" />
-    <Content Include="bin\AutoMapper.dll" />
-    <Content Include="bin\AutoMapper.Net4.dll" />
-    <Content Include="bin\businesslogic.dll" />
-    <Content Include="bin\ClientDependency.Core.dll" />
-    <Content Include="bin\ClientDependency.Core.Mvc.dll" />
-    <Content Include="bin\cms.dll" />
-    <Content Include="bin\controls.dll" />
-    <Content Include="bin\CookComputing.XmlRpcV2.dll" />
+    <Content Include="bin\AutoMapper.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\AutoMapper.Net4.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\bin\AutoMapper.dll" />
+    <Content Include="bin\bin\AutoMapper.Net4.dll" />
+    <Content Include="bin\bin\businesslogic.dll" />
+    <Content Include="bin\bin\ClientDependency.Core.dll" />
+    <Content Include="bin\bin\ClientDependency.Core.Mvc.dll" />
+    <Content Include="bin\bin\cms.dll" />
+    <Content Include="bin\bin\controls.dll" />
+    <Content Include="bin\bin\CookComputing.XmlRpcV2.dll" />
+    <Content Include="bin\bin\Examine.dll" />
+    <Content Include="bin\bin\HtmlAgilityPack.dll" />
+    <Content Include="bin\bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\bin\ImageProcessor.dll" />
+    <Content Include="bin\bin\ImageProcessor.Web.dll" />
+    <Content Include="bin\bin\interfaces.dll" />
+    <Content Include="bin\bin\log4net.dll" />
+    <Content Include="bin\bin\Lucene.Net.dll" />
+    <Content Include="bin\bin\MarkdownSharp.dll" />
+    <Content Include="bin\bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\bin\Microsoft.ApplicationBlocks.Data.dll" />
+    <Content Include="bin\bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\bin\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\bin\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\bin\Microsoft.Data.Edm.dll" />
+    <Content Include="bin\bin\Microsoft.Data.OData.dll" />
+    <Content Include="bin\bin\Microsoft.Data.Services.Client.dll" />
+    <Content Include="bin\bin\Microsoft.Owin.dll" />
+    <Content Include="bin\bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\bin\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="bin\bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\bin\MiniProfiler.dll" />
+    <Content Include="bin\bin\MonAgentListener.dll" />
+    <Content Include="bin\bin\MySql.Data.dll" />
+    <Content Include="bin\bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\bin\Owin.dll" />
+    <Content Include="bin\bin\Semver.dll" />
+    <Content Include="bin\bin\SQLCE4Umbraco.dll" />
+    <Content Include="bin\bin\System.Collections.Immutable.dll" />
+    <Content Include="bin\bin\System.Data.SqlServerCe.dll" />
+    <Content Include="bin\bin\System.Data.SqlServerCe.Entity.dll" />
+    <Content Include="bin\bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\bin\System.Reflection.Metadata.dll" />
+    <Content Include="bin\bin\System.Spatial.dll" />
+    <Content Include="bin\bin\System.Web.Helpers.dll" />
+    <Content Include="bin\bin\System.Web.Http.dll" />
+    <Content Include="bin\bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\bin\System.Web.Mvc.dll" />
+    <Content Include="bin\bin\System.Web.Razor.dll" />
+    <Content Include="bin\bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\bin\System.Web.WebPages.dll" />
+    <Content Include="bin\bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\bin\TidyNet.dll" />
+    <Content Include="bin\bin\Umbraco.Core.dll" />
+    <Content Include="bin\bin\umbraco.DataLayer.dll" />
+    <Content Include="bin\bin\umbraco.dll" />
+    <Content Include="bin\bin\umbraco.editorControls.dll" />
+    <Content Include="bin\bin\umbraco.MacroEngines.dll" />
+    <Content Include="bin\bin\Umbraco.ModelsBuilder.Api.dll" />
+    <Content Include="bin\bin\Umbraco.ModelsBuilder.dll" />
+    <Content Include="bin\bin\umbraco.providers.dll" />
+    <Content Include="bin\bin\Umbraco.Web.PublishedContentModels.dll" />
+    <Content Include="bin\bin\Umbraco.Web.UI.dll" />
+    <Content Include="bin\bin\UmbracoExamine.dll" />
+    <Content Include="bin\bin\UrlRewritingNet.UrlRewriter.dll" />
+    <Content Include="bin\businesslogic.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\ClientDependency.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\ClientDependency.Core.Mvc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\cms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\controls.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\CookComputing.XmlRpcV2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\de\Microsoft.Data.Edm.resources.dll" />
     <Content Include="bin\de\Microsoft.Data.OData.resources.dll" />
     <Content Include="bin\de\Microsoft.Data.Services.Client.resources.dll" />
@@ -487,16 +574,28 @@
     <Content Include="bin\es\Microsoft.Data.OData.resources.dll" />
     <Content Include="bin\es\Microsoft.Data.Services.Client.resources.dll" />
     <Content Include="bin\es\System.Spatial.resources.dll" />
-    <Content Include="bin\Examine.dll" />
+    <Content Include="bin\Examine.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\fr\Microsoft.Data.Edm.resources.dll" />
     <Content Include="bin\fr\Microsoft.Data.OData.resources.dll" />
     <Content Include="bin\fr\Microsoft.Data.Services.Client.resources.dll" />
     <Content Include="bin\fr\System.Spatial.resources.dll" />
-    <Content Include="bin\HtmlAgilityPack.dll" />
-    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
-    <Content Include="bin\ImageProcessor.dll" />
-    <Content Include="bin\ImageProcessor.Web.dll" />
-    <Content Include="bin\interfaces.dll" />
+    <Content Include="bin\HtmlAgilityPack.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\ImageProcessor.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\ImageProcessor.Web.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\interfaces.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\it\Microsoft.Data.Edm.resources.dll" />
     <Content Include="bin\it\Microsoft.Data.OData.resources.dll" />
     <Content Include="bin\it\Microsoft.Data.Services.Client.resources.dll" />
@@ -511,49 +610,102 @@
     <Content Include="bin\ko\Microsoft.Data.OData.resources.dll" />
     <Content Include="bin\ko\Microsoft.Data.Services.Client.resources.dll" />
     <Content Include="bin\ko\System.Spatial.resources.dll" />
-    <Content Include="bin\log4net.dll" />
-    <Content Include="bin\Lucene.Net.dll" />
-    <Content Include="bin\MarkdownSharp.dll" />
-    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
-    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
-    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
-    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
-    <Content Include="bin\Microsoft.AI.Web.dll" />
-    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
-    <Content Include="bin\Microsoft.ApplicationBlocks.Data.dll" />
-    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
-    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
-    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
-    <Content Include="bin\Microsoft.Azure.KeyVault.Core.dll" />
-    <Content Include="bin\Microsoft.Azure.KeyVault.Core.xml" />
-    <Content Include="bin\Microsoft.CodeAnalysis.CSharp.dll" />
-    <Content Include="bin\Microsoft.CodeAnalysis.dll" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="bin\Microsoft.Data.Edm.dll" />
-    <Content Include="bin\Microsoft.Data.Edm.xml" />
-    <Content Include="bin\Microsoft.Data.OData.dll" />
-    <Content Include="bin\Microsoft.Data.OData.xml" />
-    <Content Include="bin\Microsoft.Data.Services.Client.dll" />
-    <Content Include="bin\Microsoft.Data.Services.Client.xml" />
-    <Content Include="bin\Microsoft.Owin.dll" />
-    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
-    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll" />
-    <Content Include="bin\Microsoft.Owin.Security.dll" />
-    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
-    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="bin\Microsoft.WindowsAzure.Diagnostics.dll" />
-    <Content Include="bin\Microsoft.WindowsAzure.ServiceRuntime.dll" />
-    <Content Include="bin\Microsoft.WindowsAzure.Storage.dll" />
-    <Content Include="bin\Microsoft.WindowsAzure.Storage.pdb" />
-    <Content Include="bin\Microsoft.WindowsAzure.Storage.xml" />
-    <Content Include="bin\MiniProfiler.dll" />
-    <Content Include="bin\MonAgentListener.dll" />
-    <Content Include="bin\MySql.Data.dll" />
-    <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\OsteriaLeBocceMVC.dll" />
-    <Content Include="bin\OsteriaLeBocceMVC.pdb" />
-    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\log4net.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Lucene.Net.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\MarkdownSharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AI.Web.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.ApplicationBlocks.Data.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.ApplicationInsights.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.CodeAnalysis.CSharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.CodeAnalysis.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Data.Edm.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Data.OData.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Data.Services.Client.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\MiniProfiler.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\MonAgentListener.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\MySql.Data.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\OsteriaLeBocceMVC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Owin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\roslyn\csc.exe" />
     <Content Include="bin\roslyn\csi.exe" />
     <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
@@ -576,37 +728,95 @@
     <Content Include="bin\ru\Microsoft.Data.OData.resources.dll" />
     <Content Include="bin\ru\Microsoft.Data.Services.Client.resources.dll" />
     <Content Include="bin\ru\System.Spatial.resources.dll" />
-    <Content Include="bin\Semver.dll" />
-    <Content Include="bin\SQLCE4Umbraco.dll" />
-    <Content Include="bin\System.Collections.Immutable.dll" />
-    <Content Include="bin\System.Data.SqlServerCe.dll" />
-    <Content Include="bin\System.Data.SqlServerCe.Entity.dll" />
+    <Content Include="bin\Semver.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\SQLCE4Umbraco.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Collections.Immutable.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Data.SqlServerCe.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Data.SqlServerCe.Entity.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\System.Data.SqlServerCe.Entity\IT\System.Data.SqlServerCe.Entity.resources.dll" />
     <Content Include="bin\System.Data.SqlServerCe.Entity\System.Data.SqlServerCe.Entity.dll" />
-    <Content Include="bin\System.Net.Http.Formatting.dll" />
-    <Content Include="bin\System.Reflection.Metadata.dll" />
-    <Content Include="bin\System.Spatial.dll" />
-    <Content Include="bin\System.Spatial.xml" />
-    <Content Include="bin\System.Web.Helpers.dll" />
-    <Content Include="bin\System.Web.Http.dll" />
-    <Content Include="bin\System.Web.Http.WebHost.dll" />
-    <Content Include="bin\System.Web.Mvc.dll" />
-    <Content Include="bin\System.Web.Razor.dll" />
-    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="bin\System.Web.WebPages.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.dll" />
-    <Content Include="bin\TidyNet.dll" />
-    <Content Include="bin\Umbraco.Core.dll" />
-    <Content Include="bin\umbraco.DataLayer.dll" />
-    <Content Include="bin\umbraco.dll" />
-    <Content Include="bin\umbraco.editorControls.dll" />
-    <Content Include="bin\umbraco.MacroEngines.dll" />
-    <Content Include="bin\Umbraco.ModelsBuilder.dll" />
-    <Content Include="bin\umbraco.providers.dll" />
-    <Content Include="bin\Umbraco.Web.PublishedContentModels.dll" />
-    <Content Include="bin\Umbraco.Web.UI.dll" />
-    <Content Include="bin\UmbracoExamine.dll" />
-    <Content Include="bin\UrlRewritingNet.UrlRewriter.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Reflection.Metadata.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Spatial.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Helpers.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Http.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Http.WebHost.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Mvc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Razor.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.WebPages.Deployment.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.WebPages.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.WebPages.Razor.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\TidyNet.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Umbraco.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\umbraco.DataLayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\umbraco.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\umbraco.editorControls.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\umbraco.MacroEngines.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Umbraco.ModelsBuilder.Api.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Umbraco.ModelsBuilder.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\umbraco.providers.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Umbraco.Web.PublishedContentModels.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Umbraco.Web.UI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\UmbracoExamine.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\UrlRewritingNet.UrlRewriter.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\x86\Microsoft.VC90.CRT\msvcr90.dll" />
     <Content Include="bin\x86\Microsoft.VC90.CRT\README_ENU.txt" />
     <Content Include="bin\x86\sqlceca40.dll" />
@@ -3917,7 +4127,12 @@
     <Content Include="Media\1051\panini_lebocce.pdf" />
     <Content Include="Media\1052\pizze_lebocce.pdf" />
     <Content Include="bin\ApplicationInsights.config" />
-    <None Include="Properties\PublishProfiles\Osteria Le Bocce.pubxml" />
+    <None Include="Properties\PublishProfiles\Osteria Le Bocce FTP.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\Osteria Le Bocce.pubxml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
@@ -6400,7 +6615,9 @@
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <None Include="Media\Web.config" />
     <Content Include="Config\UrlRewriting.config" />
-    <Content Include="Config\umbracoSettings.config" />
+    <Content Include="Config\umbracoSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Config\trees.config" />
     <Content Include="Config\tinyMceConfig.config" />
     <Content Include="Config\scripting.config" />
@@ -6574,7 +6791,9 @@
 	<Content Include="App_Data\TEMP\ExamineIndexes\NELLOPC\Internal\Index\segments_1" />-->
     <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.NELLOPC.hash" />
     <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.NELLOPC.list" />
-    <Content Include="App_Data\umbraco.config" />
+    <Content Include="App_Data\umbraco.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <Content Include="bin\roslyn\csc.exe.config" />
     <Content Include="bin\roslyn\csc.rsp" />
@@ -6585,7 +6804,9 @@
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
-    <Content Include="bin\OsteriaLeBocceMVC.dll.config" />
+    <Content Include="bin\OsteriaLeBocceMVC.dll.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\HomeTemplate.cshtml" />
     <Content Include="images\icone\facebook_icon.psd" />
     <Content Include="css\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
