@@ -1,10 +1,11 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using System.Text.RegularExpressions
 @{
     var shareImagesList = Model.Content.GetPropertyValue<string>("bannerXs").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
     var shareImagesCollection = Umbraco.TypedMedia(shareImagesList).Where(x => x != null);
 
     string imageUrl = "http://www.osterialebocce.it" + shareImagesCollection.First().Url;
-    string descrizione = Model.Content.GetPropertyValue<string>("Descrizione");
+    string descrizione = Regex.Replace(Model.Content.GetPropertyValue<string>("Descrizione"), "<.*?>", String.Empty);
 }
 <meta property="og:url" content="@Model.Content.UrlWithDomain()" />
 <meta property="og:type" content="article" />

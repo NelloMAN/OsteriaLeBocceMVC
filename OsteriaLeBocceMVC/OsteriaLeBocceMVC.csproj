@@ -856,6 +856,7 @@
     <Content Include="images\banner\banner_desserts.jpg" />
     <Content Include="images\banner\banner_pizze.jpg" />
     <Content Include="images\facebook\share_eventi.jpg" />
+    <Content Include="images\favicon.ico" />
     <Content Include="images\home\chiSiamo.jpg" />
     <Content Include="images\home\eventi.jpg" />
     <Content Include="images\home\menu.jpg" />
